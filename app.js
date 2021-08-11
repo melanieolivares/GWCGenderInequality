@@ -114,6 +114,7 @@ navButton.addEventListener('click', () => {
 })
 
 const hamburger = document.querySelector('.hamburger-container');
+
 const overlaynav = document.querySelector('#overlay-nav');
 const hamburgermenu = document.querySelector('#hamburger-menu')
 const link1 = document.querySelector('#hamburger-link')
@@ -132,6 +133,7 @@ hamburger.addEventListener('click', function(){
         hamburgermenu.classList.add('hamburger-menu')
         hamburgermenu.classList.add('fadein-overlay')
         hamburgermenu.classList.remove('fadeout-overlay')
+        hamburgermenu.style.display = ''
         link1.classList.add('hamburger-links')
         link1.classList.add('fadein-overlay')
         link2.classList.add('hamburger-links')
@@ -141,7 +143,6 @@ hamburger.addEventListener('click', function(){
         link1.classList.remove('fadeout-overlay')
         link2.classList.remove('fadeout-overlay')
         link3.classList.remove('fadeout-overlay')
-
         menucontact.classList.add('menucontact')
         menucontact.classList.add('fadein-overlay')
         menucontact.classList.remove('fadeout-overlay')
@@ -159,6 +160,8 @@ hamburger.addEventListener('click', function(){
         hamburgermenu.classList.remove('hamburger-menu')
         hamburgermenu.classList.remove('fadein-overlay')
         hamburgermenu.classList.add('fadeout-overlay')
+        hamburgermenu.style.display = 'none'
+
         link1.classList.remove('hamburger-links')
         link1.classList.remove('fadein-overlay')
         link2.classList.remove('hamburger-links')

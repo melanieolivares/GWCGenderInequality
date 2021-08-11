@@ -2,6 +2,8 @@
     .hamburger-container{
         display: none;
     }
+
+    
     
 }
 
@@ -26,6 +28,9 @@
 
 @media only screen and (max-width: 1279px) {
     .nav{
+
+        position: static;
+
         &__linkcontainer{
             display: none;
         }

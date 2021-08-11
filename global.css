@@ -22,6 +22,7 @@ body {
 .nav__logo {
   height: 76px;
   margin: 0 0 0 20px;
+  z-index: 120;
 }
 
 .nav__logocontainer {
@@ -38,6 +39,7 @@ body {
   color: #FFFFFF;
   font-size: 6rem;
   font-weight: 700;
+  z-index: 120;
 }
 
 .nav__title--vertical {
@@ -50,6 +52,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   margin: 0 -20px 0 -15px;
+  z-index: 120;
 }
 
 .nav__links {
@@ -102,7 +105,7 @@ body {
   position: absolute;
   width: 983px;
   opacity: 55%;
-  z-index: 0;
+  z-index: -10;
   top: 160px;
   margin-top: 125px;
 }
@@ -111,7 +114,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 50px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__text--color {
@@ -300,7 +303,6 @@ body {
 }
 
 .hamburger-menu {
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,8 +316,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
-  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 10px;
   position: absolute;
   z-index: 200;
@@ -323,11 +329,13 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 115px;
+  top: 30%;
   opacity: 0;
+  margin-top: 50px;
 }
 
 .hamburger-links {
-  color: #000000;
+  color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-family: 18px;

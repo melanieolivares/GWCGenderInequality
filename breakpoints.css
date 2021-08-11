@@ -20,6 +20,9 @@
 }
 
 @media only screen and (max-width: 1279px) {
+  .nav {
+    position: static;
+  }
   .nav__linkcontainer {
     display: none;
   }

@@ -22,6 +22,7 @@ body{
     &__logo{
         height: 76px;
         margin: 0 0 0 20px;
+        z-index: 120;
     }
     &__logocontainer{
         display: flex;
@@ -33,6 +34,8 @@ body{
         color: $white;
         font-size: $bigheadertext;
         font-weight: $bold;
+        z-index: 120;
+
         &--vertical{
             color: $white;
             font-weight: $bold;
@@ -40,6 +43,8 @@ body{
             transform: rotate(-90deg);
             height: fit-content;
             margin: 0 -20px 0 -15px;
+            z-index: 120;
+
 
 
         }
@@ -92,7 +97,7 @@ body{
         position: absolute;
         width: 983px;
         opacity: 55%;
-        z-index: 0;
+        z-index: -10;
         top: 160px;
         margin-top: 125px;
     }
@@ -101,7 +106,7 @@ body{
         font-size: $smallheadertext;
         font-weight: $light;
         margin-bottom: 50px;
-        z-index: 1;
+        z-index: -1;
 
         &--color{
             color: $pink;
@@ -273,25 +278,29 @@ body{
 }
 
 .hamburger-menu{
-    background-color: white;
+    // background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 90%;
+    height: fit-content;
+    width: fit-content;
     border-radius: 10px;
     position: absolute;
     z-index: 200;
     left: 50%;
     transform: translateX(-50%);
     top: 115px;
+    top: 30%;
     opacity: 0;
+    margin-top: 50px;
+    
+    
     
 }
 
 .hamburger-links{
-    color: $black;
+    color: $white;
     font-family: 'Roboto', sans-serif;
     font-size: $smallheadertext;
     font-family: 18px;
@@ -418,3 +427,7 @@ body{
     animation: fade-out 300ms ease-in-out forwards;
     display: none;
 }
+
+
+
+
