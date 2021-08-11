@@ -1,0 +1,420 @@
+@import 'variables';
+
+body,html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: $grey;
+}
+
+.nav{
+    background-color: $grey;
+    opacity: .9;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &__logo{
+        height: 76px;
+        margin: 0 0 0 20px;
+    }
+    &__logocontainer{
+        display: flex;
+        justify-content: center;
+        width: 60px;
+    }
+
+    &__title{
+        color: $white;
+        font-size: $bigheadertext;
+        font-weight: $bold;
+        &--vertical{
+            color: $white;
+            font-weight: $bold;
+            font-size: $smallheadertext;
+            transform: rotate(-90deg);
+            height: fit-content;
+            margin: 0 -20px 0 -15px;
+
+
+        }
+    }
+
+    
+    &__links{
+        color: $white;
+        font-size: $text;
+        font-weight: $light;
+        margin: 0 0 0 100px;
+        transition: ease-in-out .2s;
+        width: fit-content;
+        text-decoration: none;
+        &:nth-child(1){
+            margin-left: 0;
+        }
+
+        &:hover{
+            color: $black;
+            border-top: 2px solid $pink;
+
+        }
+
+    }
+    &__button{
+        color: $black;
+        font-size: $text;
+        font-weight: $med;
+        background: $pink;
+        padding: 15px 25px;
+        border-radius: 10px;
+        transition: ease-in-out .2s;
+        margin: 0 80px 0 0;
+        width: 170px;
+        border: none;
+
+
+        &:hover{
+            background: $hoverpink;
+            cursor: pointer;
+        }
+    }
+}
+
+.header{
+    margin-top: 300px;
+    margin-bottom: 450px;
+    &__img{
+        position: absolute;
+        width: 983px;
+        opacity: 55%;
+        z-index: 0;
+        top: 160px;
+        margin-top: 125px;
+    }
+
+    &__text{
+        font-size: $smallheadertext;
+        font-weight: $light;
+        margin-bottom: 50px;
+        z-index: 1;
+
+        &--color{
+            color: $pink;
+            font-weight: $bold;
+        }
+    }
+
+    &__typewriter{
+        color: rgba(0, 0, 0, 0.55);
+        font-size: $bigheadertext;
+        font-weight: bold;
+        z-index: 1;
+        width: min-content;
+        height: 300px;
+    }
+}
+
+.info{
+    background: white;
+    height: fit-content;
+
+    &__container{
+        background: $black;
+        width: 550px;
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 85px;
+    }
+    &__header{
+        color: $pink;
+        font-size: $headertext;
+        font-weight: $med;
+    }
+
+    &__text{
+        font-size: $text;
+        font-weight: $light;
+        width: 550px;
+        line-height: 40px;
+        margin-bottom: 150px;
+        
+    }
+}
+
+.cardcontainer{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: $grey;
+    border-radius: 10px;
+    width: 400px;
+    height: 485px;
+    margin-right: 50px;
+    margin-bottom: 85px;
+    transition: ease-in-out .2s;
+
+    &:nth-child(3){
+        margin: 0;
+    }
+
+    &__img{
+        height: 225px;
+        margin-top: 30px;
+    }
+
+    &__title{
+        font-size: $text;
+        font-weight: $med;
+        width: 400px;
+        padding: 15px 30px 0px 30px;
+        
+    }
+    &__desc{
+        font-weight: $reg;
+        padding: 20px 30px 30px 30px;
+
+    }
+
+    &__date{
+        font-weight: $light;
+        
+    }
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+}
+
+#date1{
+    margin: 30px 0px 0 250px;
+}
+
+#date2{
+    margin: 60px 0px 0 250px;
+}
+
+#date3{
+    margin: -15px 0px 0 250px;
+}
+
+.action{
+
+
+    &__container{
+        margin-top: 100px;
+    }
+    &__header{
+        font-size: $headertext;
+        font-weight: $light;
+        transition: ease-in-out .2s;
+
+        &:hover{
+            cursor: pointer;
+            color: $pink;
+        }
+
+
+    }
+
+    &__desc{
+        font-weight: $thin;
+        font-size: $text;
+    }
+
+    &__img{
+        width: 278px;
+        margin-top: 100px;
+        margin-left: 300px;
+        margin-bottom: 100px;
+
+    }
+}
+
+.accent{
+    width: 98px;
+    height: 10px;
+    background: $pink;
+
+}
+
+#actionimg2{
+    margin-top: 180px;
+    margin-left: 0;
+    width: 584px;
+    margin-right: 300px;
+}
+
+#actionimg3{
+    width: 480px;
+}
+
+.hamburger-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 30px;
+    flex-direction: column;
+    z-index: 12;
+    
+}
+
+.hamburger-menu{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 90%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 200;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 115px;
+    opacity: 0;
+    
+}
+
+.hamburger-links{
+    color: $black;
+    font-family: 'Roboto', sans-serif;
+    font-size: $smallheadertext;
+    font-family: 18px;
+    font-weight: $light;
+    z-index: 15;
+    margin-bottom: 30px;
+
+    
+}
+
+
+.hamburger-links:hover{
+    color: $pink;
+}
+
+.contactbox-menu{
+    margin-top: 20px;
+    width: fit-content;
+    height: 50px;
+    z-index: 15;
+
+
+}
+
+.menucontact{
+    color: $black;
+    font-size: $text;
+    font-weight: $med;
+    background: $pink;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: ease-in-out .2s;
+    width: 170px;
+    border: none;
+    
+}
+
+.menucontact:hover{
+    background: $hoverpink;
+    cursor: pointer;
+}
+
+.menudisplay{
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: $pink;
+    margin: 3px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+    transition: all .25s ease-in;
+
+}
+
+
+.bar3 {
+    margin-bottom: 0;
+}
+
+.change .bar1 {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.overlay-nav{
+    opacity: 0;
+    background: $black;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+@keyframes fade-in {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    1%{
+        visibility: visible;
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+.fadein-overlay{
+    animation: fade-in 300ms ease-in-out forwards;
+    display: block;
+
+
+}
+
+@keyframes fade-out {
+    from{
+        visibility: visible;
+        opacity: 1;
+    }
+    99%{
+        visibility: visible;
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.fadeout-overlay{
+    animation: fade-out 300ms ease-in-out forwards;
+    display: none;
+}

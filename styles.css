@@ -1,0 +1,26 @@
+body {
+  background: #FFFFFF;
+}
+
+.nav {
+  margin-bottom: 150px;
+}
+
+.nav__links:nth-child(4) {
+  margin-right: 180px;
+}
+
+.content__header {
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 85px;
+}
+
+.content__text {
+  font-weight: 300;
+  font-size: 1.125rem;
+  width: 1000px;
+  line-height: 40px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1280px) {
+  .hamburger-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .cardcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .action__img {
+    margin-left: 100px;
+  }
+  #actionimg2 {
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .nav__linkcontainer {
+    display: none;
+  }
+  .nav__buttoncontainer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=breakpoints.css.map */

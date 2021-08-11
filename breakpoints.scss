@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1280px){
+    .hamburger-container{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) {
+    .cardcontainer{
+        flex-direction: column;
+    }
+
+    .action{
+        &__img{
+            margin-left: 100px;
+
+        }
+    }
+
+    #actionimg2{
+        margin-right: 150px;
+
+    }
+    
+}
+
+@media only screen and (max-width: 1279px) {
+    .nav{
+        &__linkcontainer{
+            display: none;
+        }
+        &__buttoncontainer{
+            display: none;
+        }
+    }
+}

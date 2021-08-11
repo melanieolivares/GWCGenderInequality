@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="breakpoints.css">
+    <title>Activist Website</title>
+</head>
+<body>
+    <nav class = 'nav'>
+        <div id = 'overlay-nav'></div>
+        <ul class = 'flex flex-row items-center justify-between'>
+            <div class = 'flex flex-row items-center' id ='logocontainer'>
+                <div class = 'nav__logocontainer'>
+                    <img class = 'nav__logo' src="imgs/activistlogo.png" alt="woman icon">
+                </div>
+                <div class = 'nav__title--vertical'>STAND</div> 
+                <div class = 'nav__title'>UP</div>
+            </div>
+            <div class="flex flex-row items-center nav__linkcontainer">
+                <a class = 'nav__links' href="#informing">What's going on?</a>
+                <a class = 'nav__links' href = '#takingaction'>What can I do?</a>
+                <a class = 'nav__links' href = 'about.html'>Why this website?</a>
+            </div>
+            <div class="flex flex-row items-center nav__buttoncontainer">
+                <button class = 'nav__button'>LEARN MORE</button>
+            </div>
+            <div class="hamburger-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </ul>
+    </nav>
+    <div class = 'hamburger-menu flex justify-center items-center' id = 'hamburger-menu'>
+        <a href="#informing" class = 'menudisplay' id = 'hamburger-link'>What's going on?</a>
+        <a href="#takingaction" class = 'menudisplay' id = 'hamburger-link2'>What can I do?</a>
+        <a href="about.html" class = 'menudisplay' id = 'hamburger-link3'>Why this website?</a>
+
+        <div class="contactbox-menu">
+            <button class = 'menudisplay' id = 'menucontact'>LEARN MORE</button>
+        </div>
+    </div>
+    <section class = 'header'>
+        <div class = 'flex flex-col justify-center items-center'>
+            <div class = 'flex justify-center'>
+                <img class = 'header__img' src="imgs/homeimg.jpg" alt="People protesting for equality">
+            </div>
+            <div class = 'header__text'>FIGHTING AGAINST <span class = 'header__text--color'>GENDER INEQUALITY</span> BY:</div>
+            <span class = 'header__typewriter txt-type' data-wait = '2000' data-words = '["STANDING UP", "EDUCATING OTHERS", "HELPING EACHOTHER", "LISTENING"]'></span>
+        </div>
+    </section>
+    <section class = 'info flex flex-col items-center'>
+        <div class = 'info__container'>
+            <div class = 'info__header' id = 'informing'>WHAT'S GOING ON?</div>
+        </div>
+        <div class = 'info__text'>
+            Recently, there has been events that have shown that gender inequality continues to be widespread and is especially prevelant in male dominated fields. Here are some articles to learn more:
+        </div>
+        <div class = 'cardcontainer'>
+            <div class = 'card' id = 'card1'>
+                <img class = 'card__img' src="imgs/article1.jpeg" alt="blizzard poster">
+                <div class = 'card__title'>Harrasment at Well-Known Gaming Company</div>
+                <div class = 'card__desc'>"At Blizzard, groping, free-flowing booze and fear of retaliation tainted ‘magical’ workplace"</div>
+                <div class= 'card__date' id = 'date1'>August 6, 2021</div>
+            </div>
+            <div class = 'card' id = 'card2'>
+                <img class = 'card__img' src="imgs/article2.jpg" alt="Gamers at TwitchCon">
+                <div class = 'card__title'>Women Speaking Out</div>
+                <div class = 'card__desc'>"Dozens of Women in Gaming Speak Out About Sexism and Harassment"</div>
+                <div class= 'card__date' id = 'date2'>June 23, 2020</div>
+            </div>
+            <div class = 'card' id = 'card3'>
+                <img class = 'card__img' src="imgs/atricle3.png" alt="Gender Balance Scorecard">
+                <div class = 'card__title'>Gender Balance Scorecard</div>
+                <div class = 'card__desc'>"At 20-first we believe the best measure of progress towards gender-balanced businesses is the make-up
+                    of Executive top teams rather than Boards. Here we report on the Top 14 Global Gaming companies by
+                    revenue."</div>
+                <div class= 'card__date' id = 'date3'>September 2020</div>
+            </div>
+        </div>
+        <div class = 'info__container'>
+            <div class = 'info__header' id = 'takingaction'>WHAT CAN I DO?</div>
+        </div>
+        <div class = 'action'>
+            <div class = 'action__educate flex flex-row items-center'>
+                <div class = 'action__container'>
+                    <div class = 'accent'></div>
+                    <div class = 'action__header' id = 'action1'>EDUCATE YOURSELF</div>
+                    <div class = 'action__desc'>There are many resources avaliable to see what is happening around you.</div>
+                </div>
+                <img class = 'action__img'src="imgs/stats.jpg" alt="Statistics about gender ineqaulity">
+            </div>
+            <div class = 'action__educate flex flex-row items-center'>
+                <img id = 'actionimg2' class = 'action__img'src="imgs/awareness.jpg" alt="Statistics about gender ineqaulity">
+                <div class = 'action__container'>
+                    <div class = 'accent'></div>
+                    <div class = 'action__header' id = 'action2'>SPREAD AWARENESS</div>
+                    <div class = 'action__desc'>Educate others online, at school, or in your community.</div>
+                </div>
+            </div>
+            <div class = 'action__educate flex flex-row items-center'>
+                <div class = 'action__container'>
+                    <div class = 'accent'></div>
+                    <div class = 'action__header' id = 'action3'>BE INVOLVED</div>
+                    <div class = 'action__desc'>Join others in protesting against these inequalities. </div>
+                </div>
+                <img id = 'actionimg3' class = 'action__img'src="imgs/beinvolved.png" alt="Statistics about gender ineqaulity">
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
