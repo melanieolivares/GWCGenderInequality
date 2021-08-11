@@ -9,10 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="breakpoints.css">
     <title>Why this website?</title>
 </head>
 <body>
     <nav class = 'nav'>
+        <div id = 'overlay-nav'></div>
+
         <ul class = 'flex flex-row items-center justify-between'>
             <div class = 'flex flex-row items-center' id ='logocontainer'>
                 <div class = 'nav__logocontainer'>
@@ -21,14 +24,25 @@
                 <div class = 'nav__title--vertical'>STAND</div> 
                 <div class = 'nav__title'>UP</div>
             </div>
-            <div class = "flex flex-row items-center">
+            <div class = "flex flex-row items-center nav__linkcontainer">
                 <a class = 'nav__links' id = 'link1' href="">Educate Yourself</a>
                 <a class = 'nav__links' id = 'link2' href = ''>Spread Awareness</a>
                 <a class = 'nav__links' id = 'link3' href = ''>Be Involved</a>
                 <a class = 'nav__links' id = 'link4' href = 'about.html'>Why this website?</a>
             </div>
+            <div class="hamburger-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </ul>
     </nav>
+    <div class = 'hamburger-menu' id = 'hamburger-menu'>
+        <a href="" class = 'menudisplay' id = 'hamburger-link'>Educate Yourself</a>
+        <a href="" class = 'menudisplay' id = 'hamburger-link2'>Spread Awareness</a>
+        <a href="" class = 'menudisplay' id = 'hamburger-link4'>Be Involved</a>
+        <a href="about.html" class = 'menudisplay' id = 'hamburger-link3'>Why this website?</a>
+    </div>
     <section class = 'content flex items-center flex-col'>
         <div>
             <div class = 'accent'></div>
@@ -39,7 +53,6 @@
         </div>
         
     </section>
-    <script src="app.js"></script>
     <script src="stylesapp.js"></script>
 </body>
 </html>

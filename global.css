@@ -9,6 +9,16 @@ body {
   background: #A2A6AD;
 }
 
+::-moz-selection {
+  background: #EF476F;
+  color: black;
+}
+
+::selection {
+  background: #EF476F;
+  color: black;
+}
+
 .nav {
   background-color: #A2A6AD;
   opacity: .9;
@@ -103,7 +113,8 @@ body {
 
 .header__img {
   position: absolute;
-  width: 983px;
+  width: 50%;
+  min-width: 1000px;
   opacity: 55%;
   z-index: -10;
   top: 160px;
@@ -175,6 +186,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .card {
@@ -192,14 +210,9 @@ body {
   border-radius: 10px;
   width: 400px;
   height: 485px;
-  margin-right: 50px;
   margin-bottom: 85px;
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
-}
-
-.card:nth-child(3) {
-  margin: 0;
 }
 
 .card__img {
@@ -241,8 +254,16 @@ body {
   margin: -15px 0px 0 250px;
 }
 
-.action__container {
-  margin-top: 100px;
+.action__educate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .action__header {
@@ -263,9 +284,8 @@ body {
 }
 
 .action__img {
-  width: 278px;
+  width: 20%;
   margin-top: 100px;
-  margin-left: 300px;
   margin-bottom: 100px;
 }
 
@@ -276,14 +296,12 @@ body {
 }
 
 #actionimg2 {
-  margin-top: 180px;
   margin-left: 0;
-  width: 584px;
-  margin-right: 300px;
+  width: 40%;
 }
 
 #actionimg3 {
-  width: 480px;
+  width: 40%;
 }
 
 .hamburger-container {

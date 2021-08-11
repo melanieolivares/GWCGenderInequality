@@ -1,3 +1,5 @@
+@import 'variables';
+
 @media only screen and (min-width: 1280px){
     .hamburger-container{
         display: none;
@@ -12,17 +14,7 @@
         flex-direction: column;
     }
 
-    .action{
-        &__img{
-            margin-left: 100px;
-
-        }
-    }
-
-    #actionimg2{
-        margin-right: 150px;
-
-    }
+    
     
 }
 
@@ -37,5 +29,278 @@
         &__buttoncontainer{
             display: none;
         }
+    }
+    
+
+}
+
+@media only screen and (max-width: 1119px) {
+    .action{
+        &__header{
+            font-size: $largeheadertext;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1079px) {
+    .action{
+        &__desc{
+            font-size: $smalltext;
+        }
+    }
+
+    .header{
+        &__img{
+            min-width: 900px;
+        }
+    }
+}
+
+@media only screen and (max-width: 929px) {
+    .header{
+        &__img{
+            min-width: 800px;
+        }
+    }
+}
+
+@media only screen and (max-width: 839px) {
+    .action{
+        &__header{
+            font-size: $medheadertext;
+        }
+    }
+
+    .header{
+
+        &__img{
+            min-width: 700px;
+        }
+
+        &__text{
+            margin-bottom: 10px;
+        }
+        
+    }
+
+    .content{
+        &__text{
+            font-size: $smalltext;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .action{
+        &__desc{
+            font-size: $xsmalltext;
+        }
+    }
+
+    .header{
+        &__img{
+            min-width: 600px;
+            margin-top: 250px;
+
+        }
+
+        &__typewriter{
+            font-size: $xbigheadertext;
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 639px) {
+    .header{
+
+        &__img{
+            min-width: 550px;
+
+        }
+}
+    .action{
+        &__educate{
+            flex-direction: column;
+
+        }
+        &__desc{
+            font-size: $smalltext;
+
+        }
+
+        &__img{
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
+    }
+
+    #desc1{
+        width: 270px;
+    }
+
+    #actionimg1{
+        min-width: 200px;
+
+    }
+
+    #actionimg2{
+        order: 2;
+        min-width: 400px;
+    }
+
+    
+    #actionimg3{
+        min-width: 400px;
+    }
+
+    .content{
+        &__text{
+            font-size: $xsmalltext;
+        }
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .header{
+
+        &__img{
+            min-width: 450px;
+
+        }
+}
+
+    .info{
+        &__container{
+            width: 90%;
+        }
+
+        &__text{
+            font-size: $smalltext;
+            width: 90%;
+
+        }
+    }
+
+
+    .action{
+        &__desc{
+            font-size: $xsmalltext;
+
+        }
+
+    }
+
+    .header{
+
+        &__text{
+            font-size: $text;
+
+        }
+        
+    }
+
+    #informing{
+        font-size: $largeheadertext;
+    }
+    #takingaction{
+        font-size: $largeheadertext;
+
+    }
+    .card{
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 454px) {
+    .header{
+
+        &__img{
+            min-width: 400px;
+
+        }
+
+        &__typewriter{
+            font-size: $headertext;
+    
+        }
+    }
+
+    .card{
+        transform: scale(.85);
+    }
+
+    
+}
+
+@media only screen and (max-width: 409px) {
+    .header{
+
+        &__img{
+            min-width: 350px;
+
+        }
+
+        &__text{
+            font-size: $smalltext;
+        }
+
+    }
+
+    #logocontainer{
+        transform: scale(.9);
+    }
+
+    #actionimg1{
+        min-width: 100px;
+
+    }
+
+    #actionimg2{
+        order: 2;
+        min-width: 300px;
+    }
+
+    
+    #actionimg3{
+        min-width: 300px;
+    }
+
+    #informing{
+        font-size: $medheadertext;
+    }
+    #takingaction{
+        font-size: $medheadertext;
+
+    }
+}
+
+@media only screen and (max-width: 351px) {
+
+    .header{
+
+        &__img{
+            min-width: 300px;
+
+        }
+        &__text{
+            font-size: $xsmalltext;
+        }
+    }
+    #logocontainer{
+        transform: scale(.8);
+    }
+
+    .card{
+        transform: scale(.75);
     }
 }

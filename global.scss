@@ -10,6 +10,10 @@ body{
     font-family: 'Roboto', sans-serif;
     background: $grey;
 }
+::selection {
+    background: $pink;
+    color: black;
+}
 
 .nav{
     background-color: $grey;
@@ -44,9 +48,6 @@ body{
             height: fit-content;
             margin: 0 -20px 0 -15px;
             z-index: 120;
-
-
-
         }
     }
 
@@ -95,7 +96,8 @@ body{
     margin-bottom: 450px;
     &__img{
         position: absolute;
-        width: 983px;
+        width: 50%;
+        min-width: 1000px;
         opacity: 55%;
         z-index: -10;
         top: 160px;
@@ -156,6 +158,9 @@ body{
 
 .cardcontainer{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 .card{
@@ -166,13 +171,10 @@ body{
     border-radius: 10px;
     width: 400px;
     height: 485px;
-    margin-right: 50px;
     margin-bottom: 85px;
     transition: ease-in-out .2s;
 
-    &:nth-child(3){
-        margin: 0;
-    }
+
 
     &__img{
         height: 225px;
@@ -219,8 +221,10 @@ body{
 .action{
 
 
-    &__container{
-        margin-top: 100px;
+    &__educate{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
     &__header{
         font-size: $headertext;
@@ -231,8 +235,6 @@ body{
             cursor: pointer;
             color: $pink;
         }
-
-
     }
 
     &__desc{
@@ -241,9 +243,8 @@ body{
     }
 
     &__img{
-        width: 278px;
+        width: 20%;
         margin-top: 100px;
-        margin-left: 300px;
         margin-bottom: 100px;
 
     }
@@ -257,14 +258,13 @@ body{
 }
 
 #actionimg2{
-    margin-top: 180px;
     margin-left: 0;
-    width: 584px;
-    margin-right: 300px;
+    width: 40%;
 }
 
 #actionimg3{
-    width: 480px;
+    width: 40%;
+
 }
 
 .hamburger-container {
