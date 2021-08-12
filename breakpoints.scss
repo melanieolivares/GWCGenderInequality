@@ -63,6 +63,13 @@
             min-width: 800px;
         }
     }
+
+    .content{
+        &__vid{
+            width: 640px;
+            height: 360px;
+        }
+    }
 }
 
 @media only screen and (max-width: 839px) {
@@ -111,6 +118,13 @@
 
         }
 
+    }
+
+    .content{
+        &__vid{
+            width: 544px;
+            height: 306px;
+        }
     }
 
 
@@ -218,6 +232,13 @@
             transform: scale(1.05);
         }
     }
+
+    .content{
+        &__vid{
+            width: 432px;
+            height: 243px;
+        }
+    }
     
 }
 
@@ -237,6 +258,12 @@
 
     .card{
         transform: scale(.85);
+    }
+
+    .content{
+        &__vid{
+            transform: scale(.9);
+        }
     }
 
     
@@ -282,6 +309,16 @@
         font-size: $medheadertext;
 
     }
+
+    .content{
+        &__vid{
+            transform: scale(.8);
+        }
+        &__desc{
+            font-size: $smalltext;
+            margin-top: 0;
+        }
+    }
 }
 
 @media only screen and (max-width: 351px) {
@@ -302,5 +339,16 @@
 
     .card{
         transform: scale(.75);
+    }
+
+    .content{
+        &__vid{
+            transform: scale(.7);
+        }
+        &__desc{
+            font-size: $xsmalltext;
+        }
+
+        
     }
 }

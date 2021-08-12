@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 body{
     background: $white;
     
@@ -15,7 +16,6 @@ body{
 }
 
 .content{
-
     &__header{
         color: $black;
         font-size: $headertext;
@@ -32,8 +32,36 @@ body{
         max-width: 1500px;
 
     }
+    &__desc{
+        font-weight: $light;
+        font-size: $text;
+        margin-top: 25px;
+        margin-bottom: 150px;
+    }
+    
 }
 
+.card{
+    &__date{
+        margin: 60px 0px 0 250px;
+
+    }
+
+    &__img{
+        width: 360px;
+    }
+
+}
+
+#date4{
+    margin: 60px 0px 0 210px;
+
+}
+
+#date6{
+    margin: 60px 0px 0 270px;
+
+}
 
 .hamburger-container {
     display: flex;

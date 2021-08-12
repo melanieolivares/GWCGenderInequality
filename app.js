@@ -92,17 +92,17 @@ const action3 = document.querySelector('#action3');
 
 
 action1.addEventListener('click', () => {
-    window.open("");
+    window.open("educate.html");
 
 })
 
 action2.addEventListener('click', () => {
-    window.open("");
+    window.open("awareness.html");
 
 })
 
 action3.addEventListener('click', () => {
-    window.open("");
+    window.open("beinvolved.html");
 
 })
 

@@ -44,6 +44,10 @@
   .header__img {
     min-width: 800px;
   }
+  .content__vid {
+    width: 640px;
+    height: 360px;
+  }
 }
 
 @media only screen and (max-width: 839px) {
@@ -71,6 +75,10 @@
   }
   .header__typewriter {
     font-size: 4.5rem;
+  }
+  .content__vid {
+    width: 544px;
+    height: 306px;
   }
 }
 
@@ -139,6 +147,10 @@
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
+  .content__vid {
+    width: 432px;
+    height: 243px;
+  }
 }
 
 @media only screen and (max-width: 454px) {
@@ -151,6 +163,10 @@
   .card {
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
+  }
+  .content__vid {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
@@ -183,6 +199,14 @@
   #takingaction {
     font-size: 2rem;
   }
+  .content__vid {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .content__desc {
+    font-size: 1rem;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 351px) {
@@ -199,6 +223,13 @@
   .card {
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
+  }
+  .content__vid {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .content__desc {
+    font-size: 0.75rem;
   }
 }
 /*# sourceMappingURL=breakpoints.css.map */

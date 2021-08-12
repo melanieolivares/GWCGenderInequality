@@ -182,3 +182,22 @@ link4.addEventListener('click', function(){
     document.body.style.overflow = '';
 
 })
+
+const card4 = document.querySelector('#card4');
+const card5 = document.querySelector('#card5');
+const card6 = document.querySelector('#card6');
+
+card4.addEventListener('click', () => {
+    window.open("https://games.usc.edu/news/gender-equality-sells-women-in-the-games-industry/", '_blank').focus();
+
+})
+
+card5.addEventListener('click', () => {
+    window.open("https://apnews.com/article/esports-gender-inequality-scholarships-men-1823321276db40fea37dc8d9e5410643", '_blank').focus();
+
+})
+
+card6.addEventListener('click', () => {
+    window.open("https://www.forbes.com/sites/tomokoyokoi/2021/03/04/female-gamers-are-on-the-rise-can-the-gaming-industry-catch-up/", '_blank').focus();
+
+})

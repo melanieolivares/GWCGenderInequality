@@ -26,6 +26,29 @@ body {
   max-width: 1500px;
 }
 
+.content__desc {
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+.card__date {
+  margin: 60px 0px 0 250px;
+}
+
+.card__img {
+  width: 360px;
+}
+
+#date4 {
+  margin: 60px 0px 0 210px;
+}
+
+#date6 {
+  margin: 60px 0px 0 270px;
+}
+
 .hamburger-container {
   display: -webkit-box;
   display: -ms-flexbox;
