@@ -8,12 +8,13 @@ body{
 
 .nav{
     margin-bottom: 150px;
-    &__links:nth-child(4){
-        margin-right: 180px;
+    
+    
+    &__links{
+        margin-left: 85px;
     }
-    
-    
 }
+
 
 .content{
     &__header{
@@ -74,7 +75,6 @@ body{
 }
 
 .hamburger-menu{
-    // background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,6 +150,8 @@ body{
     left: 0px;
     z-index: 10;
 }
+
+
 
 @keyframes fade-in {
     from{

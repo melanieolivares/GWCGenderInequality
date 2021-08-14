@@ -6,8 +6,8 @@ body {
   margin-bottom: 150px;
 }
 
-.nav__links:nth-child(4) {
-  margin-right: 180px;
+.nav__links {
+  margin-left: 85px;
 }
 
 .content__header {

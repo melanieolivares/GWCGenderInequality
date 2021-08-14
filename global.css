@@ -87,6 +87,46 @@ body {
   border-top: 2px solid #EF476F;
 }
 
+.nav__links--subnav {
+  display: block;
+  margin: 20px 20px 0 0;
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav__links--subnav:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.nav__links--subnav:hover {
+  color: #000000;
+  border-top: 2px solid #EF476F;
+}
+
+.nav__links--subnavhamburger {
+  display: block;
+  margin: 10px 10px 0 0;
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.nav__links--subnavhamburger:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.nav__links--subnavhamburger:nth-child(1) {
+  margin-top: 0;
+}
+
+.nav__links--subnavhamburger:hover {
+  color: #EF476F;
+}
+
 .nav__button {
   color: #000000;
   font-size: 1.125rem;
@@ -104,6 +144,29 @@ body {
 .nav__button:hover {
   background: #e24066;
   cursor: pointer;
+}
+
+.nav__subnav {
+  display: none;
+  position: absolute;
+  background: rgba(239, 71, 111, 0.5);
+}
+
+.nav__subnav--hamburger {
+  background: none;
+  display: none;
+}
+
+.nav__dropdowncontainer:hover .nav__subnav {
+  display: block;
+}
+
+.nav__dropdowncontainer:hover .nav__subnav--hamburger {
+  display: block;
+}
+
+#subpagesbutton {
+  margin-right: 25px;
 }
 
 .header {
